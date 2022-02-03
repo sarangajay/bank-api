@@ -1,0 +1,30 @@
+[
+  {
+    "accountId": 111,
+    "amount": 40.0,
+    "currency": "DKK",
+    "type": "DEBIT",
+    "transactionDate": "2022-02-01T02:03:52.4234971"
+  },
+  {
+    "accountId": 111,
+    "amount": 30.0,
+    "currency": "DKK",
+    "type": "DEBIT",
+    "transactionDate": "2022-02-01T02:31:42.6683787"
+  },
+  {
+    "accountId": 111,
+    "amount": 20.0,
+    "currency": "DKK",
+    "type": "DEBIT",
+    "transactionDate": "2022-02-01T02:31:48.4494963"
+  },
+  {
+    "accountId": 111,
+    "amount": 10.0,
+    "currency": "DKK",
+    "type": "DEBIT",
+    "transactionDate": "2022-02-01T02:31:49.1592319"
+  }
+]

@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "03fae2f9-e2a1-4340-af79-2067ee9d71bf",
+		"name": "Intra Bank Payment Transfer System",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "API",
+			"item": [
+				{
+					"name": "/accounts/transfer",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"fromAccountNumber\": 111,\r\n    \"toAccountNumber\": 222,\r\n    \"amount\": 10.00\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9190/accounts/transfer/",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9190",
+							"path": [
+								"accounts",
+								"transfer",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/accounts//111/balance",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9190/accounts/111/balance",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9190",
+							"path": [
+								"accounts",
+								"111",
+								"balance"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "/accounts/111/statements/mini",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9190/accounts/111/statements/mini",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9190",
+							"path": [
+								"accounts",
+								"111",
+								"statements",
+								"mini"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
