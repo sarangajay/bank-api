@@ -1,0 +1,26 @@
+[
+  {
+    "accountId": "48bb49c8-d979-477b-9a64-d55bd5c16c8d",
+    "amount": 40.0,
+    "type": "DEBIT",
+    "transactionDate": "2023-01-24T14:40:28.671501"
+  },
+  {
+    "accountId": "48bb49c8-d979-477b-9a64-d55bd5c16c8d",
+    "amount": 30.0,
+    "type": "DEBIT",
+    "transactionDate": "2023-01-24T14:40:28.671501"
+  },
+  {
+    "accountId": "48bb49c8-d979-477b-9a64-d55bd5c16c8d",
+    "amount": 20.0,
+    "type": "DEBIT",
+    "transactionDate": "2023-01-24T14:40:28.671501"
+  },
+  {
+    "accountId": "48bb49c8-d979-477b-9a64-d55bd5c16c8d",
+    "amount": 10.0,
+    "type": "DEBIT",
+    "transactionDate": "2023-01-24T14:40:28.671501"
+  }
+]
