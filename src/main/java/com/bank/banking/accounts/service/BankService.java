@@ -21,9 +21,7 @@ public interface BankService {
     AccountNo doDeposit(AccountMovementRequest movementRequest) throws RequiredFieldException, InvalidAccountNumberException, InvalidAmountException;
 
     AccountNo doWithdraw(AccountMovementRequest movementRequest) throws RequiredFieldException, InvalidAmountException, InvalidAccountNumberException, InsufficientFoundsException;
-
-    //void doTransfer(FundTransferRequest fundTransferRequest);
-
+    
     Account getAccount(String accountNumber) throws InvalidAccountNumberException;
 
     List<AccountTransaction> getTransactions(String accountId, int limit) throws InvalidAccountNumberException;

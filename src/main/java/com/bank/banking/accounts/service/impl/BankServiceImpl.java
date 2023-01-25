@@ -92,44 +92,6 @@ public class BankServiceImpl implements BankService {
         return accountNo;
     }
 
-/*
-    @Override
-    public synchronized void doTransfer(FundTransferRequest fundTransferRequest) throws ResourceNotFoundException {
-        final int fromAccountNumber = fundTransferRequest.getFromAccountNumber();
-        final double transactionAmount = fundTransferRequest.getAmount();
-
-        final Account fromAccount = bankRepository.getAccount(fromAccountNumber);
-        if (fromAccount == null) {
-            throw new ResourceNotFoundException("Invalid [FROM] account number", accountId);
-        }
-        final int toAccountNumber = fundTransferRequest.getToAccountNumber();
-        final Account toAccount = bankRepository.getAccount(toAccountNumber);
-        if (toAccount == null) {
-            throw new ResourceNotFoundException("Invalid [TO] account number", accountId);
-        }
-
-
-        double fromAccountBalance = fromAccount.getBalance();
-
-        LOG.info("From Account Number " + fromAccountNumber + " balance is " + fromAccountBalance);
-        LOG.info("Transaction amount is " + transactionAmount);
-
-        if (fromAccountBalance < transactionAmount) {
-            throw new IllegalArgumentException("Insufficient funds available");
-        }
-
-        double toAccountBalance = toAccount.getBalance();
-        LOG.info("To Account Number " + toAccountNumber + " balance is " + toAccountBalance);
-
-
-        fromAccountBalance = fromAccountBalance - transactionAmount;
-        bankRepository.setAccountBalance(fromAccountNumber, fromAccountBalance);
-        setTransaction(fromAccountNumber, TransactionType.DEBIT);
-
-        toAccountBalance = toAccountBalance + transactionAmount;
-        bankRepository.setAccountBalance(toAccountNumber, toAccountBalance);
-        setTransaction(toAccountNumber, TransactionType.CREDIT);
-    }*/
 
     @Override
     public Account getAccount(String accountNumber) throws ResourceNotFoundException, InvalidAccountNumberException {
